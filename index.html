@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <style>
+        /* Resetando alguns estilos padrão do navegador */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(45deg, #6a11cb, #2575fc); /* Gradiente de fundo vibrante */
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+        }
+
+        form {
+            background: rgba(0, 0, 0, 0.6); /* Fundo semitransparente */
+            padding: 30px;
+            border-radius: 8px;
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+        }
+
+        input {
+            width: 100%;
+            padding: 12px;
+            margin: 12px 0;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            outline: none;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            background-color: #f1f1f1;
+            color: #333;
+        }
+
+        input[type="submit"] {
+            background-color: #2575fc;
+            color: white;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #1e62d0;
+        }
+
+        p {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #f1f1f1;
+        }
+
+        a {
+            color: #f1f1f1;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Adicionando responsividade */
+        @media (max-width: 480px) {
+            form {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <h2>Crie sua conta</h2>
+        <input type="text" id="username" placeholder="Nome" required> <br>
+        <input type="email" id="email" placeholder="Email" required> <br>
+        <input type="password" id="password" placeholder="Senha" required> <br>
+        <input type="submit" id="submit" value="Cadastrar">
+    </form>
+
+    <p>Já possui uma conta?</p>
+    <p>Faça login <a href="login.html">agora mesmo</a></p>
+
+    <script type="module" src="create-account.js" defer></script>
+</body>
+</html>
